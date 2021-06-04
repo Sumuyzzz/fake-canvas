@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    touch-action: manipulation;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+body {
+    overflow: hidden;
+}
+
+.icon {
+    width: 3em;
+    height: 3em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+#canvas {
+    display: block;
+
+}
+
+.tool {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.tool svg {
+    width: 2em;
+    height: 2em;
+    transition: all 0.3s;
+    margin: 0 10px;
+}
+
+.tool svg.active {
+    fill: red;
+    transform: scale(1.2);
+}
+
+.colors {
+    position: fixed;
+    top: 60px;
+    left: 25px;
+}
+
+.colors>li {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+}
+
+.colors>li.black {
+    background: black;
+}
+
+.colors>li.red {
+    background: red;
+}
+
+.colors>li.blue {
+    background: blue;
+}
+
+.colors>li.green {
+    background: green;
+}
+
+.colors>li.active {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.9);
+    transform: scale(1.2);
+}
+
+.size {
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+}
+
+.size li {
+    margin: 20px 0;
+}
+
+.size .small {
+    height: 0;
+    width: 20px;
+    border-top: 3px solid black;
+
+}
+
+.size .medium {
+    height: 0;
+    width: 20px;
+    border-top: 6px solid black;
+}
+
+.size .large {
+    height: 0;
+    width: 20px;
+    border-top: 9px solid black;
+}
+
+.size .active {
+    transform: translate(3px);
+    -webkit-transform: translate(3px);
+    -moz-transform: translate(3px);
+    -ms-transform: translate(3px);
+    -o-transform: translate(3px);
+}
