@@ -3,5 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Sumuyzzz <Sumuyzzz@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": "git@github.com:Sumuyzzz/fake-canvas.git"
 }
